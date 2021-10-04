@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,700&display=swap');
+body {
+  margin:0;
+  height:100vh;
+  width:100vw;
+  font-family: 'Lato', sans-serif;
+  /* overflow:hidden; */
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#ecf0f3;
+}
+*{
+  box-sizing:border-box;
+}
+
+.login-div {
+  width:460px;
+  height:710px;
+  border-radius:10px;
+  padding: 40px 35px 35px 35px;
+  background:#ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+
+.title {
+  text-align:center;
+  font-size: 22px;
+  padding-top:1px;
+  letter-spacing:0.5px;
+  color: #97488d;
+  
+}
+
+
+.fields {
+  padding:20px 5px 5px 5px;
+  width:100%;
+}
+
+
+.fields input {
+  border:none;
+  outline:none;
+  background:none;
+  font-size:16px;
+  color:#555;
+  padding:12px 10px 12px 5px;
+  
+}
+
+.fields p{
+  padding:0px 10px 0px 5px;
+  font-weight:100;
+  font-size: 20px;
+}
+
+
+.your-email,.password,.Confirm-Password {
+  margin-bottom:3px;
+  border-radius:10px;
+  box-shadow:inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.fields i {
+  height:28px;
+  margin:0 10px -3px 25px;
+  color:#967AA1 ;
+
+}
+
+.cantener{
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* flex-direction: column; */
+}
+.cantener p{
+  padding:0px 0px 0px 0px;
+  font-weight:50;
+  font-size: 16px;
+  margin-left: 12px;
+}
+.cantener label {
+  position: relative;
+}
+.cantener label input {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.cantener label .fas{
+  position: relative;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  line-height: 15px;
+  margin: 0 0px;
+  color: #cacaca;
+  font-size: 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: inset -3px -3px 7px #ffffff73,
+  inset 3px 3px 5px rgba(94,104,121,0.288);
+}
+
+.cantener label .fas:hover{
+               box-shadow: -7px -7px 20px 0px #fff9,
+              -4px -4px 5px 0px #fff9,
+              7px 7px 20px 0px #0002,
+              4px 4px 5px 0px #0001,
+              inset 0px 0px 0px 0px #fff9,
+              inset 0px 0px 0px 0px #0001,
+              inset 0px 0px 0px 0px #fff9,
+              inset 0px 0px 0px 0px #0001;
+}
+
+.cantener label input:checked ~ .fas{
+  color: #97488d;
+}
+
+button{
+  margin: 0px 0 0 0;
+  width:100%;
+  height: 40px;
+  /* color: #000; */
+  font-size: 18px;
+  font-weight: 100;
+  background: #ecf0f3;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 7px;
+  box-shadow: 12px 12px 15px #cbced1,
+              -7px -10px 15px #fff,
+               10px 10px 10px #0001,
+              -10px -10px 15px #0001 ;
+}
+
+button:hover{
+  color: #97488d;
+  box-shadow: inset 2px 2px 5px #babecc,
+              inset -5px -5px 10px #ffffff73;
+}
+
+.login-div:focus-within .your-email1{
+  color: #97488d;
+}
+
+.login-div:focus-within .password1{
+  color: #97488d;
+}
+
+.login-div:focus-within .confirm{
+  color: #97488d;
+  font-weight: 1000;
+}
+
+#or{
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* padding:0px 0px 0px 0px; */
+  font-weight:50;
+  font-size: 20px;
+  margin-left: 170px;
+
+}
+
+.media-icons{
+  display:flex;
+  justify-content:space-around;
+  margin-left:20px;
+  margin-right: 100px;
+  padding-left: 80px;
+}
+
+
+.icon{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:40px;
+  height:40px;
+  border-radius:100%;
+  background: #ececec;
+  box-shadow:  8px 8px 16px #b6b6b6, 
+             -8px -8px 16px #ffffff;
+  cursor:pointer;
+  transition:250ms;
+}
+
+.icon:hover{
+  transform:translateY(-40%);
+  background: linear-gradient(145deg, #fdfdfd, #d4d4d4);
+  box-shadow:  inset 8px 8px 16px #b6b6b6, 
+           inset -8px -8px 16px #ffffff;
+}
+
+.fa-facebook-f{
+  color:blue;
+}
+.fa-twitter{
+  color: #00acee;
+}
+
+.fa-github{
+  color: red;
+}
+
+.Ready p{
+    padding:0px 0px 0px 0px;
+    font-weight:50;
+    font-size: 16px;
+    margin-left:50px;
+}
+.Ready{
+  display: flex;
+  justify-content:space-around;
+  /* margin-left:20px; */
+  /* margin-right: 100px; */
+  /* padding-left: 80px; */
+}
+
+.Ready a{
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-right: 100px;
+  color: rgb(63, 63, 63);
+  text-decoration: none;
+}
+
